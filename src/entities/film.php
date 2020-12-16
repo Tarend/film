@@ -9,7 +9,7 @@ class film
     private $descriptionFilm;
     private $dureeFilm;
     private $dateSortieFilm;
-    private $genre;
+    private $genre=[];
 
 
     /**
@@ -99,6 +99,14 @@ class film
     public function setDateSortieFilm($dateSortieFilm)
     {
         $this->dateSortieFilm = $dateSortieFilm;
+    }
+
+    /**
+     * @param array $genre
+     */
+    public function setGenre($genre)
+    {
+        $this->genre = $genre;
     }
 
 
